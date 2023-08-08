@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ./web/app/themes:/var/www/html/web/app/themes
+      - ./.env:/var/www/html/.env
