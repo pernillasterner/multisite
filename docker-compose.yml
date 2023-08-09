@@ -4,5 +4,6 @@ services:
     ports:
       - 80:80
     volumes:
-      - ./web/app/themes:/var/www/html/web/app/themes
+      # - ./web/app/themes:/var/www/html/web/app/themes
+      - ./:/var/www/html/
       - ./.env:/var/www/html/.env
